@@ -1,7 +1,7 @@
 # Exercícios de Lógica em Python 🐍
 
 Este repositório contém exercícios de lógica de programação resolvidos em Python,
-organizados por capítulos.
+organizados por capítulos 1 e 2.
 
 📘 **Livro base:**  
 **Python Básico - Um Guia para Iniciantes e Universitários**  
