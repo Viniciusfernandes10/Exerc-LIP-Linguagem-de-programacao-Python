@@ -360,11 +360,6 @@ morango
 manga
 kiwi
 
-Saída:
-Entrada: 
-85
-1.60
-
 Saída: 
 Lista de frutas: ['uva', 'abacaxi', 'morango', 'manga', 'kiwi']
 
@@ -383,6 +378,55 @@ def lista_frutas():
 
 frutas = lista_frutas()
 print("Lista de frutas:", frutas)
+
+```
+
+---
+
+## – Exercício 06 –
+
+Arquivo: `capitulo2/ex06.py`
+
+### Enunciado
+
+Escreva um programa que solicite ao usuário a inserção de duas coordenadas (x e y). Em seguida, crie uma tupla chamada coordenadas com esses valores e imprima o conteúdo da tupla na tela.
+
+**Teste 1**
+
+Entrada: 
+2.5
+3.8
+
+Saída: 
+Coordenadas: (2.5, 3.8)
+
+**Teste 2**
+
+Entrada:
+-1.0
+0.0
+
+Saída:
+85
+1.60
+
+Saída: 
+Coordenadas: (-1.0, 0.0)
+
+
+### Resolução
+
+```python
+def recebe_coordenadas(x, y):
+    coordenadas = (x, y)
+    return coordenadas
+
+x = float(input())
+y = float(input())
+
+coordenadas = recebe_coordenadas(x, y)
+
+print("Coordenadas:", coordenadas)
 
 ```
 
