@@ -545,3 +545,83 @@ print(numeros)
 ```
 
 ---
+
+## – Exercício 09 –
+
+Arquivo: `capitulo2/ex09.py`
+
+### Enunciado
+
+Faça um programa que solicite ao usuário a inserção de três números inteiros distintos para cada conjunto. Os conjuntos conjunto_a e conjunto_b devem ser criados utilizando a função set() e preenchidos com os números fornecidos pelo usuário, utilizando o método .add(). Em seguida, realize as seguintes operações e imprima os resultados:
+
+União: combinar os elementos únicos de ambos os conjuntos.
+
+Interseção: encontrar os elementos que estão presentes em ambos os conjuntos.
+
+Diferença: identificar os elementos que estão em conjunto_a, mas não em conjunto_b.
+
+**Teste 1**
+
+Entrada: 
+
+3
+5
+7
+7
+9
+11
+
+Saída: 
+União: {3, 5, 7, 9, 11}
+
+Interseção: {7}
+
+Diferença: {3, 5}
+
+**Teste 2**
+
+Entrada:
+
+1
+2
+3
+4
+5
+1
+
+Saída: 
+União: {1, 2, 3, 4, 5}
+
+Interseção: {1}
+
+Diferença: {2, 3}
+
+### Resolução
+
+```python
+def verificar_conjuntos():
+  conjunto_a = set()
+  conjunto_b = set()
+
+  for i in range(3):
+    num = int(input())
+    conjunto_a.add(num)
+
+  for i in range(3):
+    num = int(input())
+    conjunto_b.add(num)
+
+  uniao = conjunto_a | conjunto_b
+  intersecao = conjunto_a & conjunto_b
+  diferenca = conjunto_a - conjunto_b
+  
+  return uniao, intersecao, diferenca
+
+uniao, intersecao, diferenca = verificar_conjuntos()
+print(f"União: {uniao}")
+print(f"Interseção: {intersecao}")
+print(f"Diferença: {diferenca}")
+
+```
+
+---
