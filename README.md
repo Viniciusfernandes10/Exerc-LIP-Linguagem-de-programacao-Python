@@ -767,5 +767,79 @@ def par_ou_impar():
         print(f"O número {numero5} é ímpar.")
 
 par_ou_impar()
+```
+---
 
+## – Exercício 12 –
+
+Arquivo: `capitulo2/ex12.py`
+
+### Enunciado
+
+Escreva um programa para coletar informações de um aluno. Utilizando um dicionário denominado “aluno”, solicite ao usuário as seguintes informações:
+
+Nome do aluno.  
+Matrícula do aluno.  
+Três notas do aluno.  
+
+Posteriormente, exiba na tela os dados registrados, incluindo o nome, matrícula e a média das três notas do aluno. Utilize somente os métodos especiais dos dicionários para inserir e acessar os dados.
+
+### Teste 1
+
+**Entrada:**
+
+Linus Benedict Torvalds  
+12345  
+8.5  
+7.2  
+9.0  
+
+**Saída:**
+
+Nome: Linus Benedict Torvalds  
+Matrícula: 12345  
+Média: 8.23  
+
+### Teste 2
+
+**Entrada:**
+
+Ada Lovelace  
+67890  
+9.8  
+8.7  
+10.0  
+
+**Saída:**
+
+Nome: Ada Lovelace  
+Matrícula: 67890  
+Média: 9.5   
+
+### Resolução
+
+```python
+def dicionario_aluno():
+
+  nome = input()
+  matricula = int(input())
+  nota1 = float(input())
+  nota2 = float(input())
+  nota3 = float(input())
+
+  media = (nota1 + nota2 + nota3) / 3
+
+  aluno ={
+    "Nome": nome,
+    "Matrícula": matricula,
+    "Média": media
+  }
+
+  return aluno
+
+aluno = dicionario_aluno()
+print(f"Nome: {aluno['Nome']}")
+print(f"Matrícula: {aluno['Matrícula']}")
+print(f"Média: {aluno['Média']:.2f}")
+```
 ---
