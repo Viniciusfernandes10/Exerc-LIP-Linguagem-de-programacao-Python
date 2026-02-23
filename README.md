@@ -625,3 +625,67 @@ print(f"Diferença: {diferenca}")
 ```
 
 ---
+
+## – Exercício 10 –
+
+Arquivo: `capitulo2/ex10.py`
+
+### Enunciado
+
+Dada duas strings fornecidas pelo usuário, realize as seguintes operações e imprima os resultados:
+
+Transformar em maiúsculas: converta toda a primeira string para letras maiúsculas.
+
+Transformar em minúsculas: converta toda a segunda string para letras minúsculas.
+
+Concatenar as strings: combine a primeira e a segunda string em uma única string.
+
+Imprimir o resultado: exiba a string concatenada na tela.
+
+**Teste 1**
+
+Entrada: 
+
+Olá, mundo.
+
+Mundo
+
+Saída: 
+OLÁ, MUNDO.
+
+mundo
+
+OLÁ, MUNDO. mundo
+
+**Teste 2**
+
+Entrada:
+
+A Verdade Está Lá Fora, Neo.
+
+Mas Você Tem Que Escolher Se Quer Vê-la.
+
+Saída: 
+A VERDADE ESTÁ LÁ FORA, NEO.
+
+mas você tem que escolher se quer vê-la.
+
+A VERDADE ESTÁ LÁ FORA, NEO. mas você tem que escolher se quer vê-la.
+
+### Resolução
+
+```python
+def transformar_string():
+    string1 = input()
+    string2 = input()
+
+    print(string1.upper())
+    print(string2.lower())
+    print(string1.upper() + " " + string2.lower())
+
+
+transformar_string()
+
+```
+
+---
